@@ -23,7 +23,6 @@ def new_word_check():
     new_word_cross()
 
 
-
 def new_word_cross():
     global english_word, french_word, flip_timer, current_card
     current_card = choice(dict)
@@ -34,7 +33,6 @@ def new_word_cross():
     canvas.itemconfig(title_txt, text="French", fill="black")
     canvas.itemconfig(img, image=front)
     flip_timer = window.after(3000, flip)
-    print(len(dict))
 
 
 def flip():
